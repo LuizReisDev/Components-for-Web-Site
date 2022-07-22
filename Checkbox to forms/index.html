@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <style>
+        body {
+            background-color: rgb(36, 36, 48);
+            padding: 100px;
+        }
+        
+        label {
+            display: block;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        input {
+            position: absolute;
+            transform: scale(0);
+        }
+
+        input:checked ~ .marcado {
+            transform: rotate(45deg);
+            width: 10px;
+            margin-left: 6px;
+            border-color: #24c78e;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-radius: 0;
+        }
+
+        .marcado {
+            display: block;
+            width: inherit;
+            height: inherit;
+            border: 3px solid #969696;
+            border-radius: 7px;
+            transition: all 0.375s;
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox"/>
+        <span class="marcado"></span>
+    </label>
+</body>
+</html>
