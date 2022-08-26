@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(21, 19, 19);
+}
+
+/* Colocando o texto na cor branca */
+p {
+    color: rgb(191, 186, 186);
+}
+
+/* Atribuindo a ele as cores que deve ficar após a seleção */
+p::selection {
+    color: #fedc00; /* Cor da letra após ser selecionada */
+    background-color: #7239e6; /* Cor da seleção */
+}
